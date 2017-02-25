@@ -1,0 +1,1021 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Livestream Studio™ | Live Production Hardware and Software</title>
+        <meta name="google-site-verification" content="yvnVRYqcoNrpjgPQFJxvIfIrGO3vyexEo9iXriUwcU4" />
+        <meta name="description" content="Studio 4.2 Live Production Switcher: The most versatile live switcher. Stream live to multiple platforms including Facebook Live.">
+        <script type="text/javascript">(function(){if(document.cookie.indexOf('LsTestCookie')===-1){document.cookie='LsTestCookie=true;path=/';if(document.cookie.indexOf('LsTestCookie')===-1){/*window.location.href='/cookies.html';*/}}})();</script>
+        <meta http-equiv="Content-Type" content="charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"167a2dcd46","applicationID":"442341","transactionName":"cFZcR0YOVVxdRx8RFUZdW1wbSVZEUFBCSw==","queueTime":0,"applicationTime":30,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="fb-app-id" content="142371818162" />
+<meta name="google-site-verification" content="yvnVRYqcoNrpjgPQFJxvIfIrGO3vyexEo9iXriUwcU4" />
+    <script src="https://cdn.optimizely.com/js/6330181092.js"></script>
+<!-- IE9 Task bar meta -->
+<meta name="application-name" content="Livestream" />
+<meta name="msapplication-tooltip" content="Watch, like and share live events on Livestream. Live stream video and connect your event to audiences on the web and mobile devices using Livestream's award winning platform and services." />
+<meta name="msapplication-starturl" content="http://livestream.com?ie9pinned=true" />
+<meta name="msapplication-navbutton-color" content="#c00" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/m/icon-iphone@2x.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/m/icon-ipad.png">
+<link rel="apple-touch-icon-precomposed" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/m/icon-iphone.png">
+<link rel="shortcut icon" type="image/x-icon" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/favicon.ico">
+<link rel="icon" type="image/ico" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/favicon.ico">
+
+<script type="text/javascript">
+//<![CDATA[
+
+  var _sf_startpt=(new Date()).getTime()
+
+//]]>
+</script>
+
+        <meta content="142371818162" name="fb-app-id" />
+<meta property="fb:app_id" content="142371818162"/>
+<meta property="og:title" content="Livestream Studio™ | Live Production Hardware and Software"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="Studio 4.2 Live Production Switcher: The most versatile live switcher. Stream live to multiple platforms including Facebook Live."/>
+<meta property="og:site_name" content="Livestream"/>
+<meta property="og:url" content="https://livestream.com/studio"/>
+<meta property="og:image" content="https://cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/studio-masthead.jpg"/>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Livestream" />
+<meta name="twitter:title" content="Livestream Studio™ | Live Production Hardware and Software" />
+<meta name="twitter:description" content="Studio 4.2 Live Production Switcher: The most versatile live switcher. Stream live to multiple platforms including Facebook Live." />
+<meta name="twitter:image" content="https://cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/studio-masthead.jpg" />
+
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+//<![CDATA[
+
+    // reading cookie without jquery
+    function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+    }
+    window.currentUser = (readCookie('__cu') !== null ? JSON.parse(decodeURIComponent(readCookie('__cu'))) : {});
+    window.lsconfig = {
+        assets : {
+            host : '//cdn.livestream.com/deploy/website/production/a8fb976',
+            prefix : '/assets',
+            path : function (asset) {
+                return this.host + this.prefix + (asset === null || asset === undefined ? '' : '/' + asset);
+            }
+        },
+    accountCreated : false,
+    supportUrl : 'https://help.livestream.com/hc/en-us/requests/new',
+    curatedEventstUrl : '/curated_events',
+    recurlySubDomain : 'livestream',
+    recurlyPublicKey: 'sjc-xHmhbxeRoJdKF9tPZK9tLQ',
+    apiUrl : 'https://api.new.livestream.com',
+    mixpanelToken : "61d57ff4b45a23016c9a98558467649b",
+    mixpanelDebug : false,
+    searchOptions : {"algolia_app_id":"7KJECL120U","algolia_search_key":"98f12273997c31eab6cfbfbe64f99d92","algolia_search_index_list":{"Events":"events","Accounts":"accounts","Videos":"videos"},"algolia_discovery_index_list":{"Events":"events","Accounts":"accounts","Videos":"videos","Categories":"categories"},"analytics_search_index_list":{"Accounts":"analytics-accounts","Events":"analytics-events","Videos":"analytics-videos","Images":"analytics-images","Statuses":"analytics-statuses"}},
+    notApplicable : 'NA',
+    client_ip : "183.20.135.132",
+    api : {
+        relativeUrlEndpoint : "/api",
+        absoluteUrlEndpoint : "//api.new.livestream.com",
+        host : "api.new.livestream.com",
+        playerHost : "player-api.new.livestream.com"
+    },
+    isLocked: false,
+    account: {
+    },
+    userData: '',
+    findFriends: '',
+    checkFacebookFriends: '/join?post_action%5Baction%5D=show_facebook_friends&amp;post_action%5Bredirect%5D=%2Fstudio',
+    upgradePlan: '',
+    accountBillingPath: '/my_account/plans',
+    facebookPermissions : {
+        scope : 'email,user_birthday,publish_actions,manage_pages,user_friends'
+    },
+    fbGraphApi: 'graph.facebook.com/v2.3',
+    events : {
+    perRow : 10,
+    curatePerRow : 10,
+    socket: {
+    socketIOURL: "https://api.new.livestream.com/servers/sio/leastloaded",
+    }
+    },
+    account_id:"null",
+    };
+
+//]]>
+</script>
+        <link href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/index_.css" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="P3Pv1" href="/w3c/p3p.xml">
+        <meta content="authenticity_token" name="csrf-param" />
+<meta content="VgO9/Z5XqyW5Slbtx0VuKHPUBYVWuNaIpA+81FsCPG0=" name="csrf-token" />
+    </head>
+    <body class="ls_marketing ls_left_nav capture_layout studio logged_out responsive overview">
+        <script>
+    var user = (readCookie('__cu') !== null ? JSON.parse(decodeURIComponent(readCookie('__cu'))) : {});
+    var gtm_data = JSON.parse('{"page":"Marketing"}');
+    gtm_data.account_id = !user.id ? 'Unknown' : user.id.toString();
+    gtm_data.session_type = !user.id ? 'Logged Out' : 'Logged In';
+    gtm_data.plan_type = getPlan(user);
+    gtm_data.page = (typeof gtm_data.page === 'undefined' ? 'Others' : gtm_data.page);
+    dataLayer = [];
+    dataLayer.push(gtm_data);
+
+    function getPlan (user) {
+        var plan;
+        switch (true) {
+            case !user.id:
+                plan =  'Unknown';
+                break;
+            case user.is_free:
+                plan = 'Free';
+                break;
+            case user.is_basic:
+                plan = 'Basic';
+                break;
+            case user.is_premium:
+                plan = 'Premium';
+                break;
+            case user.is_enterprise === true:
+                plan = 'Enterprise';
+                break;
+            default:
+                plan = 'error'
+                break;
+        }
+      return plan;
+    }
+    // Reading the cookie separately for google analytics since at the time google analytics is called
+    // Application.currentUser might not be initalized.
+    function readCookie (name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') {
+                c = c.substring(1,c.length);
+            }
+            if (c.indexOf(nameEQ) == 0) {
+                return c.substring(nameEQ.length,c.length);
+            }
+        }
+        return null;
+    }
+</script>
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KNG43F"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer', 'GTM-KNG43F');
+</script>
+<!-- End Google Tag Manager -->
+
+        <div id="fb-root"></div>
+        <div id="container">
+            <div id="pagewrap" class="marketing_wrapper">
+                <header class="marketing_header responsive" id="header">
+                  <div class="header_nav">
+    <div class="menu js-menu">
+        <span class="menu-item"></span>
+        <span class="menu-item"></span>
+        <span class="menu-item"></span>
+    </div>
+    <h1 class="logo js-logo">
+        <a class="header_logos large_black" href="/" title="Livestream"></a>
+        <a class="header_logos small_black" href="/" title="Livestream"></a>
+    </h1>
+    <nav class="maintabs js-maintabs">
+        <ul>
+            <li><a class="broadcast tab" href="/" title="Live Video Platform">Broadcast</a></li>
+            <li><a class="capture tab" href="/capture" title="Tools to Broadcast Live">Capture</a></li>
+            <li><a class="watch tab " href="/watch" title="Discover Live Events">Discover</a></li>
+        </ul>
+    </nav>
+    <div class="header_right contact js-header_contact">
+        <ul>
+                <li class="others_element phone">
+                    <a href="/contact" class="option" title="Contact Us">+1 646 490 1679</a>
+                </li>
+                <li class="others_element">
+                    <a href="https://livestream.com/blog" class="option" alt="Blog" title="Livestream | Product and Producers Blog">Blog</a>
+                </li>
+                <li class="others_element">
+                    <a href="https://help.livestream.com" class="help option" alt="Help" title="Livestream | Help">Help</a>
+                </li>
+                <li class="others_element seperator"> </li>
+
+                <a href="/session/new" class="login option js-user_login" title="Log in" data-remote="true" data-modal="true">Log in</a>
+                <a href="/platform/pricing" class="header_go_live option js-header_go_live" title="Livestream | Go Live">Go Live</a>
+        </ul>
+    </div>
+</div>
+
+                    <nav class="subnav_black studio_nav js-subnav">
+    <div class="product_navigation_container">
+        <nav role="navigation" class="products_dropdown js-products_dropdown">
+    <span class="menu_title js-products_dropdown_toggle">studio</span>
+    <ul class="menu_list">
+        <div class="menu_group">
+            <li class="list_item sub_list_title">PRODUCTS</li>
+            <li class="list_item">
+                <a href="/producer" title="Producer" class="list_link ">Producer</a>
+                <div class="product_tooltip producer_product_tooltip">
+                    <div class="product_name">Producer</div>
+                    <div class="product_text">Free broadcasting apps for every device. </div>
+                </div>
+            </li>
+            <li class="list_item">
+                <a href="/broadcaster" title="Broadcaster" class="list_link ">Broadcaster</a>
+                <div class="product_tooltip broadcasters_product_tooltip">
+                    <div class="product_name">Broadcaster</div>
+                    <div class="product_text">Go live from your camera. </div>
+                </div>
+            </li>
+            <li class="list_item">
+                <a href="/studio" title="Studio" class="list_link highlight">Studio</a>
+                <div class="product_tooltip studio_product_tooltip">
+                    <div class="product_name">Studio</div>
+                    <div class="product_text">Live production switcher software and hardware.</div>
+                </div>
+            </li>
+            <li class="list_item">
+                <a href="http://getmevo.com" title="Mevo" class="list_link">Mevo</a>
+                <div class="product_tooltip mevo_product_tooltip">
+                    <div class="product_name">Mevo</div>
+                    <div class="product_text">Edit video on the fly. Stream live or share later.</div>
+                </div>
+            </li>
+        </div>
+    </ul>
+</nav>
+
+        <ul class="product_navigation more_element_present studio_dropdown_spacing buy_now_spacing" data-menu="index">
+            <a class="" href="/studio/software" title="Software">Software</a>
+            <a class="" href="/studio/hd31" title="HD31">HD31</a>
+            <a class="" href="/studio/hd51" title="HD51">HD51</a>
+            <a class="" href="/studio/hd550" title="HD550">HD550</a>
+            <a class=""  href="/studio/hd1710" title="HD1710">HD1710</a>
+            <a class="" href="/studio/surface" title="Surface">Surface</a>
+            <a class="" href="/studio/surface-go" title="Surface Go">Surface Go</a>
+            <a class="" href="/studio/remote-cams" title="Remote Cams">Remote Cams</a>
+            <a class="" href="/studio/tech-specs" title="Tech Specs">Tech Specs</a>
+            <a class="" href="https://help.livestream.com" title="Support">Support</a>
+        </ul>
+        <div class="more_item js-show_more">More
+            <ul class="js-more_dropdown more_dropdown menu_open"></ul>
+        </div>
+        <a href="http://store.livestream.com/products/" title="Buy Now" class="button_marketing red">Buy Now</a>
+    </div>
+</nav>
+
+                </header>
+                 <div id="wrapper">
+                    <div class="save-status">
+                        <p>&nbsp;</p>
+                    </div>
+                    <!-- header_menu file -->
+<section class="sidemenu_section js-sidemenu_section">
+	<div class="sidemenu_section_inner">
+		<div class="section">
+			<ul class="each_block larger_font">
+				<li class=""><a href="/">Broadcast</a></li>
+				<li class="active"><a href="/capture">Capture</a></li>
+			</ul>
+		</div>
+		<div class="section">
+			<div class="block_label">DISCOVER</div>
+			<ul class="each_block">
+  <li class="">
+    <a href="/watch">Home</a>
+  </li>
+  <li class="">
+    <a href="/watch/popular">Popular</a>
+  </li>
+  <li class=" hidden">
+    <a href="javascript:void(0);" class="has_location_icon js-location"></a>
+  </li>
+</ul>
+
+		</div>
+		<div class="section">
+			<ul class="each_block other_links">
+				<li><a href="/about">What is Livestream?</a></li>
+				<li><a href="https://help.livestream.com/">Help</a></li>
+				<li><a href="https://livestream.com/blog">Blog</a></li>
+				<li><a href="/terms">Privacy &amp; Terms</a></li>
+			</ul>
+		</div>
+		<div class="section js-discovery_account_container">
+		</div>
+	</div>
+</section>
+
+                    
+
+
+
+<div class="studio_overview">
+    <div class="masthead_wrapper">
+        <div class="masthead_inner">
+            <div class="masthead">
+                <div class="masthead_content">
+                    <h1>Studio <span>4.2</span></h1>
+                    <h2>Live Production Switcher</h2>
+                    <a href="//livestream.com/accounts/256352/events/7021632/videos/149593335/player?width=640&height=360&enableInfo=false&defaultDrawer=&autoPlay=true&mute=false" class="new_in_studio studio_icon video_play_icon fancybox.iframe js-play_get_started_video" alt="Getting started video">
+                        <span>Getting Started With Livestream Studio Software</span>
+                    </a>
+                    <a href="//cdn.livestream.com/manuals/Livestream_Studio-Release-Notes-and-New-Features-4.2.pdf" target="_blank"
+                    class="new_in_studio studio_icon pdf_circle_icon">
+                        <span>See everything new in Studio 4.2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fblive_container_wrapper">
+        <div class="fblive_container">
+            <div class="studio_icon fblive_icon">
+                <p class="text">Now you can stream to Facebook Live!</p>
+            </div>
+        </div>
+    </div>
+    <section class="promos">
+        <div class="promo_block mevo_promo">
+            <div class="promo_content">
+                <div class="promo_content_inner">
+                    <div class="highlight_new">NEW</div>
+                    <h2 class="promo_headline">Mevo</h2>
+                    <p class="promo_para">Edit video on the fly.</p>
+                    <p class="promo_para">Stream live through Studio.</p>
+                    <a href="http://getmevo.com" title="Mevo Camera" class="button_marketing red">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+       <div class="promo_block hd550_promo">
+            <div class="promo_content">
+                <div class="promo_content_inner">
+                    <div class="highlight_new">NEW</div>
+                    <h2 class="promo_headline">New in Studio 4.2</h2>
+                    <p class="promo_para">Hardware accelerated encoding </br>with 4K support</p>
+                    <p class="promo_para">Stream to multiple platforms</p>
+                    <p class="promo_para">Graphics in Web Control</p>
+                    <a href="https://livestream.com/blog/livestream-studio-upgrade-lower-cpu-multi-platform-streaming" target="_blank" title=" Livestream Studio HD550" class="button_marketing red">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="live_switcher_headline">
+            The most versatile live switcher
+        </h2>
+        <div class="device_browsers_wrapper">
+            <div class="devices">
+                 <img class="devices_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/devices.jpg" />
+                 <div class="left_icons_wrapper">
+                    <span class="studio_icon hdsdi_icon"></span>
+                    <span class="studio_icon hdmi_large_icon"></span>
+                    <span class="studio_icon usb_icon"></span>
+                 </div>
+            </div>
+            <div class="device_browsers">
+                 <img class="browsers_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/browsers.jpg"/>
+                <div class="right_icons_wrapper">
+                    <span class="studio_icon mevo_icon"></span>
+                    <span class="studio_icon upload_icon"></span>
+                    <span class="studio_icon apple_store_icon"></span>
+                    <span class="studio_icon play_store_icon"></span>
+                    <span class="studio_icon video_icon"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="features_wrapper_mobile">
+        <section class="wired_wireless">
+            <div class="wired_wireless_content_wrapper">
+                <div class="wireless separator">
+                    <div class="icons_wrapper studio_mini_icon wireless_icon"></div>
+                    <h2 class="cameras_type">Wireless cameras</h2>
+                    <a href="/studio/remote-cams" class="anchor_link" tile="Learn More">Learn more</a>
+                </div>
+                <div class="wired">
+                    <div class="icons_wrapper studio_mini_icon wired_icon"></div>
+                    <h2 class="cameras_type">Wired cameras</h2>
+                </div>
+            </div>
+            <img class="hd_live_switching" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/multi_view_screen.png" alt="HD live switching" />
+        </section>
+        <section class="features">
+            <p class="frame_accurate separator">Frame-accurate <span>HD live switching</span>, with up to 4 multi-view displays</p>
+            <p class="broadcast_quality feature_list">
+                Broadcast quality <span>video output</span>
+            </p>
+            <div class="quality_output">
+                <span class="studio_icon hdmi_medium"></span>
+                <span class="sdi">SDI</span>
+            </div>
+            <div class="stream_live_to_devices feature_list">
+                <p><span>Stream live</span> to any device</p>
+                <a href="/" title="Learn more about Livestream Platform™" class="anchor_link live_platform_link">Learn more about <div>Livestream Platform<span class="tm">TM</span></div></a>
+            </div>
+            <div class="stream_to_multiple feature_list">
+                <p><span>Stream live</span> to multiple platforms</p>
+                <a href="/studio/tech-specs" title="See supported platforms" class="anchor_link">See supported platforms</a>
+            </div>
+        </section>
+    </div>
+    <div class="features_wrapper">
+        <div class="features_wrapper_inner">
+            <div class="wired_section">
+                <h2>Connect any type of <span>wired camera</span></h2>
+                <img class="multi_screen_hd" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/multi_view_screen.png"/>
+                <p class="stream_live_hd"><span>Stream live</span> to any device</p>
+                <a href="/" class="anchor_link_large about_platform" title="Learn more about Livestream Platform™">Learn more about livestream platform <span class="tm">TM</span></a>
+                <img class="livestream_cloud" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/livestream_cloud.png"/>
+            </div>
+            <div class="wireless_section">
+                <h2>Choose from a range of
+                    <span>wireless cameras</span>
+                    <a class="anchor_link_large" href="/studio/remote-cams" title="Learn More">Learn more</a>
+                </h2>
+                <p class="frame_accurate_hd">
+                    Frame-accurate <span>HD live switching</span>, with up to 4 multi-view displays
+                </p>
+                <img class="quality_output_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/quality_output.png">
+                <p class="video_output_quality">
+                    Broadcast quality <span>video output</span>
+                </p>
+                <div class="quality_output_icons">
+                    <span class="studio_icon hdmi_extra"></span>
+                    <span class="sdi_extra">SDI</span>
+                </div>
+            </div>
+            <div class="multiple_platform_support">
+                <span>Stream live</span> to multiple platforms
+                <a href="/studio/tech-specs" title="See supported platforms" class="anchor_link_large see_supported_platform">See supported platforms</a>
+            </div>
+        </div>
+    </div>
+    <section class="stream_platform">
+        <img class="livestream_logo" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/livestream_logo.png" srcset="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/livestream_logo@2x.png 2x"/>
+        <ul class="platform_list">
+            <li>Facebook Live</li>
+            <li class="has_tm">YouTube live</li>
+            <li class="has_tm akamai_server">Akamai</li>
+            <li class="has_tm wowza_stream">Wowza Stream Server</li>
+            <li class="has_tm">Zixi</li>
+            <li class="has_tm">Adobe Media Server</li>
+        </ul>
+    </section>
+    <section class="fb_live_section each_section grey_bg">
+        <div class="fb_live_inner">
+            <h2 class="heading_medium">Stream to Facebook Live</h2>
+            <p class="paragraph_medium">
+                The first live production switcher that can stream directly to your Facebook friends & followers.
+                Simply log in to your Facebook acccount and go live.
+            </p>
+            <div class="stream_to_fb">
+                <img class="mw100" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/cloud_right.jpg" srcset="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/cloud_right@2x.jpg 2x"/>
+                <span class="studio_icon fblive_icon"></span>
+            </div>
+            <div class="fb_stream_image_wrapper bottom_image">
+                <img class="fb_streaming" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/fb_live_stream.jpg"/>
+            </div>
+        </div>
+    </section>
+    <section class="web_control each_section">
+        <h2 class="heading_medium">Web Control</h2>
+        <p class="paragraph_medium">Control Studio from any Chrome browser anywhere in the world, even on Android and Chromebook</p>
+        <img class="web_control_image mw100" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/web_control.png" srcset="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/web_control@2x.png 2x"/>
+        <ul class="os_list">
+            <li>OSX</li>
+            <li>Windows</li>
+            <li>Chromebook</li>
+            <li>Android</li>
+        </ul>
+        <img class="multi_screen bottom_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/multiscreen.jpg"/>
+    </section>
+    <section class="live_interview each_section grey_bg">
+        <div class="live_interview_inner">
+            <h2 class="heading_medium">Interview anyone, anywhere with Live Interview</h2>
+            <p class="paragraph_medium">Using WebRTC, Live Interview allows you to invite anyone to join your live broadcast with low latency via webcam.
+                All a guest needs is a link from you and a Chrome web browser.
+                Moderators can switch between guests, delivering a revolutionary experience from Livestream Studio.
+            </p>
+            <a href="https://help.livestream.com/hc/en-us/articles/213717527-Adding-a-Remote-Live-Interview" class="anchor_link">Live Interview Demo</a>
+            <div class="web_control_icon"></div>
+            <img class="web_control_image mw100" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/web_control.png" srcset="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/web_control@2x.png 2x"/>
+            <img class="live_interview_image bottom_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/live_interview.jpg"/>
+        </div>
+    </section>
+    <section class="mevo_remote_camera each_section">
+        <h2 class="heading_medium">Mevo Remote Camera</h2>
+        <p class="paragraph_medium">
+            Bring Mevo as a remote camera over Wifi or Ethernet.
+            Edit virtual multi-camera using the Mevo iPhone app and see the result in your Studio multi-view.
+        </p>
+        <a href="http://getmevo.com" title="Mevo Camera" class="anchor_link">Learn More About Mevo</a>
+        <img class="mevo_image bottom_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/mevo_large.jpg"/>
+    </section>
+    <section class="virtual_camera_crop each_section grey_bg">
+        <div class="virtual_camera_inner">
+            <h2 class="heading_medium">Virtual camera crop with 4K support</h2>
+            <p class="paragraph_medium">
+                Create virtual cameras from any camera input.
+                Ideal for 4K inputs when streaming in 1080p or 720p.
+                Easier camera moves, cuts and presets supported.
+            </p>
+            <img class="virtual_crop_image bottom_image"  src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/virtual_camera_crop.jpg"/>
+        </div>
+    </section>
+    <section class="bonded_streaming each_section">
+        <div class="bonded_streaming_left">
+            <h2 class="heading_medium">Bonded Streaming</h2>
+            <p class="paragraph_medium">
+                Now out of beta, bonded streaming* brings you a more stable streaming experience by making it possible
+                to spread your live stream over multiple internet connections, including Ethernet, Wifi, 3G/4G LTE modems,
+                or any other connection you can configure in Windows. You can also set a backup internet connection that
+                will be used only if your primary internet connection fails or becomes too slow, avoiding expensive data charges.
+            </p>
+            <a href="https://help.livestream.com/hc/en-us/articles/212060188-Using-a-Bonded-Network-to-Stream" class="anchor_link">More about Bonded Streaming</a>
+        </div>
+        <div class="bonded_streaming_right">
+            <img class="bonded_streaming_image bottom_image"  src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/bonded_streaming.jpg"/>
+            <p class="note"> *Only available on New Livestream</p>
+        </div>
+    </section>
+    <section class="rtmp_server each_section grey_bg">
+        <h2 class="heading_medium">Built-in RTMP Server</h2>
+        <p class="paragraph_medium">
+            Connect any RTMP-compatible encoder as an input to Studio.
+        </p>
+        <div class="rtmp_image_wrapper">
+            <img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/rtmp_server.jpg" class="rtmp_image bottom_image"/>
+        </div>
+    </section>
+    <section class="more_benefits">
+        <ul class="extra_features_list">
+            <li class="studio_icon more_device_icon">
+                <h2>More Device options</h2>
+                <p>
+                    Works with Blackmagic Design devices, Magewell devices and webcams.
+                </p>
+            </li>
+            <li class="studio_icon software_hardware_icon">
+                <h2>Software & Hardware</h2>
+                <p>
+                    Transform your PC into a live production control room,
+                    or purchase a turnkey solution that includes everything you  need to go live.
+                </p>
+            </li>
+            <li class="studio_icon support_4k_icon">
+                <h2>4K Support</h2>
+                <p>
+                    Capture and mix video in Ultra-HD quality with 4K Blackmagic Design capture cards.
+                </p>
+            </li>
+        </ul>
+        <a href="//cdn.livestream.com/manuals/Livestream_Studio-Release-Notes-and-New-Features-4.2.pdf" class="studio_icon pdf_icon see_eveything">See everything new in Studio 4.2</a>
+    </section>
+    <div class="dark_bg">
+        <div class="dark_bg_inner">
+            <section class="frame_accurate_media_playback has_border">
+                <h2 class="heading_medium_light">Frame-accurate media playback</h2>
+                <div class="red_circle_wrapper">
+                    <img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/frame_accurate.jpg" class="playback_image"/>
+                    <div class="red_circle circle_1">1</div>
+                    <div class="red_circle circle_2">2</div>
+                </div>
+                <ul class="bullet_detail">
+                    <li>
+                        Import any popular media format, loop clips, make playlists, add recordings as clips in the list and export clips as .mp4 files for easy sharing.
+                        <div class="media_format_icons">
+                            <span class="studio_icon h264_icon"></span>
+                            <span class="studio_icon mp3_icon"></span>
+                            <span class="studio_icon aac_icon"></span>
+                        </div>
+                    </li>
+                    <li>
+                        Scrub your video to find the ideal moment, trim your clip with in/out points, and set clips to autoplay with your transitions.
+                    </li>
+                </ul>
+            </section>
+            <section class="multiple_simultaneous_recordings has_border">
+                <h2 class="heading_medium_light">Multiple, simultaneous ISO recordings</h2>
+                <div class="red_circle_wrapper">
+                    <img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/simultaneous_recording.jpg" class="simultaneous_recording"/>
+                    <div class="red_circle circle_1">1</div>
+                    <div class="red_circle circle_2">2</div>
+                    <div class="red_circle circle_3">3</div>
+                </div>
+                <ul class="bullet_detail">
+                    <li>
+                        Record your program in broadcast quality with (or without) overlays.
+                    </li>
+                    <li>
+                        Edit clips and air highlighted replays to your viewers without stopping the recording!
+                    </li>
+                    <li>
+                        Record up to four simultaneous videos in broadcast quality MJPEG to an AVI file. Use an external USB3 hard drive for even greater storage.
+                    </li>
+                </ul>
+                <ul class="recording_ready_for">
+                    <li>AVI <span class="motion_jpeg">Motion JPEG</span></li>
+                    <li class="ready_for">Recordings ready for:</li>
+                    <li class="studio_icon premiere_icon">Adobe Premiere</li>
+                    <li class="studio_icon cut_pro_icon">Final Cut Pro</li>
+                </ul>
+            </section>
+            <section class="powerful_graphics">
+                <h2 class="heading_medium_light">Powerful, layered broadcast graphics</h2>
+                <div class="red_circle_wrapper">
+                    <img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/layered_graphics.jpg" class="powerful_graphics_image"/>
+                    <div class="red_circle circle_1">1</div>
+                    <div class="red_circle circle_2">2</div>
+                    <div class="red_circle circle_3">3</div>
+                </div>
+                <ul class="bullet_detail">
+                    <li>
+                        Add layers of text, images and video
+                    </li>
+                    <li>
+                        Move, distort, crop, and edit layers
+                    </li>
+                    <li>
+                        Adjust color, add borders and shadows
+                    </li>
+                </ul>
+            </section>
+            <section class="blue_header_wrapper has_border">
+                <div class="paired_blue_section">
+                    <div class="blue_header_section picture_in_picture">
+                        <h3 class="blue_header">Add live picture-in-picture or media sources</h3>
+                        <img class="media_sources" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/add_live_picture.jpg"/>
+                    </div>
+                    <div class="blue_header_section apply_in_mix">
+                        <h3 class="blue_header">Apply in the mix or as a downstream overlay</h3>
+                        <img class="downstream_overlay_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/apply_in_mix.jpg"/>
+                    </div>
+                </div>
+                <div class="blue_header_section multiple_sources">
+                    <h3 class="blue_header">Connect multiple local or external data sources</h3>
+                    <div class="red_circle_wrapper">
+                        <div class="red_dot"></div>
+                        <img class="external_data_source" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/conect_data_resources.jpg"/>
+                        <div class="red_circle circle_1">1</div>
+                    </div>
+                </div>
+            </section>
+            <section class="professional_production">
+                <h2 class="heading_medium_light">Professional production for any event</h2>
+                <div class="blue_header_section professional_production_section">
+                    <h3 class="blue_header">
+                         An assortment of creative transitions
+                    </h3>
+                    <img class="professional_production_mobile" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/professional_production_mobile.jpg"/>
+                    <img class="flags_mobile" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/flags_mobile.jpg"/>
+                    <img class="professional_production_tablet" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/professional_production_tablet.jpg"/>
+                    <img class="flags_tablet" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/flags_tablet.jpg"/>
+                     <img class="professional_production_hd" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/professional_production_hd.jpg"/>
+                </div>
+                <div class="blue_header_section audio_mixer_section has_border">
+                     <h3 class="blue_header">
+                        Audio mixer with track grouping
+                    </h3>
+                    <img class="audio_mixer_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/audio_mixer.jpg"/>
+                    <div class="audio_mix_icon">
+                        <span class="studio_icon linein_icon"></span>
+                        <span class="studio_icon hdmi_icon"></span>
+                        <span class="studio_icon sdi_icon"></span>
+                    </div>
+                    <div class="sdi_input">(16 channel SDI input)</div>
+                </div>
+            </section>
+            <section class="image_and_heading advertisement">
+                <h3 class="blue_header">Manually trigggered mid-roll advertisements</h2>
+                <p class="requires_livestream">
+                    *Requires a Livestream <a href="/platform/pricing" title="Platform Enterprise plan">Platform Enterprise plan</a> and a
+                    <a href="https://help.livestream.com/hc/en-us/articles/212723607-Google-DFP-Integration-Pre-Roll-Video-Ads-" title="Google DFP">Google DFP</a> account.</p>
+                    <img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/insert_advert.jpg" class="insert_advert">
+            </section>
+            <section class="image_and_heading tally_light_integration">
+                <h3 class="blue_header">Tally light integration</h2>
+                <div class="learn_more_aligner">
+                    <a href="https://help.livestream.com/hc/en-us/articles/212060878-Adding-Configuring-Tally-Lights" title="Learn more">Learn more</a>
+                </div>
+                <img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/tally_light.jpg" class="tally_light_image"/>
+            </section>
+            <section class="image_and_heading real_time_format">
+                <h3 class="blue_header">Convert different sources to match your project format in real-time</h2>
+                <img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/overview/real_time_format.jpg" class="real_time_format_image">
+            </section>
+        </div>
+    </div>
+    <div class="overview_remotecam">
+        <div class="hd_products_wrapper">
+    <h2 class="choose_studio_title">Choose your Studio</h2>
+    <ul class="studio_list">
+        <li class="hd31_block">
+            <a href="/studio/hd31" title="Livestream Studio HD31">
+                <div class="image_wrapper">
+                    <img class="hd31_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/hd31.png" alt="hd31"/>
+                </div>
+                <div class="detail_wrapper">
+                    <h3 class="product_title">HD31</h3>
+                    <p class="product_description">Entry level live production switcher</p>
+                </div>
+                <span class="learn_more">Learn more</span>
+            </a>
+        </li>
+        <li class="hd51_block">
+            <a href="/studio/hd51" title="Livestream Studio HD51">
+                <div class="image_wrapper">
+                     <img class="hd51_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/hd51.png" alt="hd51"/>
+                </div>
+                <div class="detail_wrapper">
+                    <h3 class="product_title"><span class="product_caption">HD51</span><span class="icon_4k"></span></h3>
+                    <p class="product_description">Powerful live production switcher</p>
+                    <p class="sub_text">Available in HD and 4K Editions</p>
+                </div>
+                <span class="learn_more">Learn more</span>
+            </a>
+        </li>
+        <li class="hd550_block">
+            <a href="/studio/hd550" title="Livestream Studio HD550">
+                <div class="image_wrapper">
+                    <img class="hd550_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/hd550.png" alt="hd550"/>
+                </div>
+                <div class="detail_wrapper">
+                    <h3 class="product_title"><span class="product_caption">HD550</span><span class="icon_4k"></span></h3>
+                    <p class="product_description">Compact and portable all-in-one live production switcher</p>
+                    <p class="sub_text">Available in HD and 4K Editions</p>
+                </div>
+                <span class="learn_more">Learn more</span>
+            </a>
+        </li>
+        <li class="hd1710_block">
+            <a href="/studio/hd1710" title="Livestream Studio HD1710">
+                <div class="image_wrapper">
+                    <img class="hd1710_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/hd1710.png" alt="hd1710"/>
+                </div>
+                <div class="detail_wrapper">
+                    <h3 class="product_title">HD1710</h3>
+                    <p class="product_description">Supercharged rack-mount switcher for the most demanding productions</p>
+                </div>
+                <span class="learn_more">Learn more</span>
+            </a>
+        </li>
+        <li class="surface_go_block">
+            <a href="/studio/surface-go" title="Livestream Studio Surface Go">
+                <div class="image_wrapper">
+                    <img class="surface_go_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/surface_go.png" alt="surface go"/>
+                </div>
+                <div class="detail_wrapper">
+                    <h3 class="product_title">Surface Go</h3>
+                    <p class="product_description">A portable control accessory for the most essential Livestream Studio controls</p>
+                </div>
+                <span class="learn_more">Learn more</span>
+            </a>
+        </li>
+        <li class="studio_surface_block">
+            <a href="/studio/surface" title="Livestream Studio Surface">
+                <div class="image_wrapper">
+                    <img class="studio_surface_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/studio_surface.png" alt="studio surface"/>
+                </div>
+                <div class="detail_wrapper">
+                    <h3 class="product_title">Studio Surface</h3>
+                    <p class="product_description">Control accessory for Livestream Studio</p>
+                </div>
+                <span class="learn_more">Learn more</span>
+            </a>
+        </li>
+        <li class="studio_software_block">
+            <a href="/studio/software" title="Livestream Studio Software">
+                <div class="image_wrapper">
+                    <img class="studio_software_image" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/studio_software.png" alt="studio software"/>
+                </div>
+                <div class="detail_wrapper">
+                    <h3 class="product_title">Studio Software</h3>
+                    <p class="product_description">Transform your PC into a professional live production control room</p>
+                </div>
+                <span class="learn_more">Learn more</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    </div>
+    <section class="included_with_studio">
+        <h2 class="studio_included_heading">Included with every Studio</h2>
+        <ul class="get_with_studio">
+            <li class="studio_icon warranty_icon"><span>1 year Warranty</span></li>
+            <li class="studio_icon phone_support_icon"><span>1 year <span>Phone Support</span></span></li>
+            <li class="studio_icon free_upgrades_icon mobile_free_upgrade_icon"><span>Free Software <span>Upgrades</span></span></li>
+            <li class="studio_icon free_upgrades_icon desktop_free_upgrade_icon"><span>Free <span>Software Upgrades</span></span></li>
+        </ul>
+    </section>
+    <section class="speak_with_expert">
+        <h3>Ready to Speak with a Live Video Expert?</h3>
+        <a href="" class="button_marketing red">GET STARTED</a>
+        <br/>
+        <a href="" class="contact_number">CALL +1 877 977 8732</a>
+    </section>
+
+</div>
+<img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/button/loading-black-small@2x.png" style="display:none"/>
+<div class="overlay_bg js-overlay_bg">
+    <div class="overlay_container js-demo_overlay">
+        <div class="form_loading"></div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+            <div class="footer_wrapper">
+    <footer id="footer" class="footer">
+            <section class="watch_livestream_anywhere">
+                <h2>Watch Livestream Anywhere</h2>
+                <div class="livestream_store">
+                    <div class="app_store"><a href="https://itunes.apple.com/us/app/id493086499?mt=8" alt="App Store" target="_blank" title="App Store">App Store</a><caption>iPhone / iPad / Apple TV</caption></div>
+                    <div class="google_play_store"><a href="https://play.google.com/store/apps/details?id=com.livestream.livestream&amp;amp;referrer=utm_source%3Dwebsite-mobile-page%26utm_medium%3Dbutton" alt="Google Play Store" title="Google Play Store" target="_blank">Google Play Store</a><caption>Android Phone / Tablet</caption></div>
+                    <div class="roku_store"><a href="https://channelstore.roku.com/details/29216/livestream" alt="Roku Store" target="_blank" title="Roku Store">Roku Store</a><caption>Roku TV Set-top Box</caption></div>
+                </div>
+            </section>
+        <section class="footer_info_wrapper">
+            <ul class="footer_info">
+                <li class="footer_info_column about">
+                    <h3>About</h3>
+                    <ul class="footer_list">
+                        <li><a href="/about" alt="What is Livestream?" title="Livestream | What is Livestream?">What is Livestream?</a></li>
+                        <li><a href="/team" alt="Meet Our Team" title="Livestream | Meet Our Team">Meet Our Team</a></li>
+                        <li><a href="/careers" alt="Careers" title="Livestream | Careers at Livestream">Careers</a></li>
+                        <li><a href="/press" alt="Press" title="Livestream | Press Releases and News">Press</a></li>
+                        <li><a href="https://livestream.com/blog" alt="Blog" title="Livestream | Product and Producers Blog">Blog</a></li>
+                        <li><a href="/contact" alt="Contact" title="Livestream | Contact Us">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column products">
+                    <h3>Products</h3>
+                    <ul class="footer_list">
+                        <li><a href="/" alt="Platform" title="Livestream | Award Winning Live Streaming Platform">Platform</a></li>
+                        <li><a href="/producer" alt="Producer" title="Livestream Producer | Free Broadcasting Apps for Every Device">Producer</a></li>
+                        <li><a href="/broadcaster" alt="Broadcaster" title="Livestream Broadcaster | Stream HD Live Video without a Computer">Broadcaster</a></li>
+                        <li><a href="/studio" alt="Studio" title="Livestream Studio&trade; | Live Production Hardware and Software">Studio</a></li>
+                        <li><a href="/developers" alt="Developer Tools" title="Developer Tools">Developer Tools</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column services">
+                    <h3>Services</h3>
+                    <ul class="footer_list">
+                        <li><a href="/production" alt="Production" title="Livestream | Production Services">Production</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column resellers">
+                    <h3>Resellers</h3>
+                    <ul class="footer_list">
+                        <li><a href="http://store.livestream.com/products/#resellers" alt="Find a Reseller" title="Livestream | Resellers of Livestream Products" target="_blank">Find a Reseller</a></li>
+                        <li><a href="https://docs.google.com/a/livestream.com/forms/d/1nvv4JD85SS5Hs3It_2Iw7-vPVmpEYg8auXRFzzHAOuU/viewform" alt="Become a Reseller" title="Livestream | Become a Livestream Reseller" target="_blank">Become a Reseller</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column venues">
+                    <h3>Venue</h3>
+                    <ul class="footer_list">
+                        <li><a href="http://www.livestreampublic.com/" title="Livestream Public">Livestream Public</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column sales_support">
+                    <h3>Sales &amp; Support </h3>
+                    <ul class="footer_list">
+                        <li><a href="https://help.livestream.com" title="Livestream | Help" class="js-get_help" alt="Help">Get Help – 7 days a week</a></li>
+                        <li><a href="/contact" title="Livestream | Contact Us" alt="Contact Us">Contact Us</a></li>
+                        <li><span class="gray">United States :</span> <a href="tel:8779778732">877 977 8732</a></li>
+                        <li><span class="gray">International :</span> <a href="tel:+16464901679">+1 646 490 1679</a></li>
+                        <li>
+                            <div class="fb-like facebook_like" data-href="http://facebook.com/livestream" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
+                            <div class="twitter_wrapper">
+                                <a href="https://twitter.com/livestream" class="twitter-follow-button" data-show-count="true" data-show-screen-name="true">Follow @livestream</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="footer_links_wrapper">
+            <div class="footer_links">
+                <ul>
+                    <li>&copy; Livestream</li>
+                    <li><a class="js-footer_terms" href="/terms" alt="Terms &amp; Privacy" title="Livestream | Terms of Use and Privacy Policy">Terms &amp; Privacy</a></li>
+                    <li><a href="http://status.livestream.com" alt="Service Status" title="Livestream | Service Status" class="service_status">Service Status</a></li>
+                </ul>
+            </div>
+            <div class="made_in_ny_logo">Made in NY</div>
+            <div class="original_livestream"><a href="https://secure.livestream.com/myaccount/channels" alt="Looking for Original Livestream?" title="Have an Original Livestream Account? Login Here">Looking for Original Livestream?</a></div>
+        </section>
+    </footer>
+</div>
+    <div class="mobile_footer_wrapper">
+        <ul class="footer_left_part">
+            <li class="mobile_footer_contact"><a href="/contact" title="Livestream | Contact Us" alt="Contact Us">Contact Us</a></li>
+            <li class="mobile_footer_help"><a href="https://help.livestream.com" title="Livestream | Help" alt="Help">Help</a></li>
+        </ul>
+        <ul class="footer_right_part">
+            <li>&copy; Livestream</li>
+        </ul>
+    </div>
+
+        </div>
+            <script type="text/javascript">
+//<![CDATA[
+
+        if (top !== self) {
+            if (!window.document.referrer.match(/^(http)?s?:?(.*)?optimizely\.com/)) {
+                alert('The URL ' + self.location.href + ' cannot be viewed inside a frame, you will be redirected.');
+                top.location.replace(self.location.href);
+            }
+        }
+
+//]]>
+</script>
+        <script src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/mixpanel.js" type="text/javascript"></script>
+                <script>var require = {"baseUrl":"","waitSeconds":0};</script>
+      <script data-main="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio_index" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/require.js"></script>
+
+        <!-- Begin Munchkin Tracking Code -->
+<script type="text/javascript">
+    if (!window.jQuery) {
+        (function() {
+            var didInit = false;
+            function initMunchkin() {
+                if(didInit === false) {
+                    didInit = true;
+                    Munchkin.init('582-GOU-684', { "cookieAnon": true });
+                }
+            }
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//munchkin.marketo.net/munchkin.js';
+            s.onreadystatechange = function() {
+                if (this.readyState == 'complete' || this.readyState == 'loaded') { initMunchkin(); }
+            };
+            s.onload = initMunchkin;
+            document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+    } else {
+        $.ajax({
+            url: '//munchkin.marketo.net/munchkin.js',
+            dataType: 'script',
+            cache: true,
+            success: function() {
+                Munchkin.init('582-GOU-684', { "cookieAnon": true });
+            }
+        });
+    };
+</script>
+<!-- End Munchkin Tracking Code -->
+
+
+        <!-- begin SnapEngage code -->
+<script type="text/javascript">
+    (function() {
+        var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+        se.src = '//storage.googleapis.com/code.snapengage.com/js/cefd7880-0d96-4c29-adb1-416279ac279f.js';
+        var done = false;
+        se.onload = se.onreadystatechange = function() {
+        if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete'))
+            { done = true; /* Place your SnapEngage JS API code below */ /* SnapEngage.allowChatSound(true); Example JS API: Enable sounds for Visitors. */
+                SnapEngage.hideButton();
+                SnapEngage.setCallback('Close', function (type, status){
+                    SnapEngage.hideButton();
+                });
+
+                if (window.location.pathname === '/platform/pricing'){
+                    SnapEngage.showButton();
+                    SnapEngage.setCallback('Close', function (type, status){
+                        SnapEngage.showButton();
+                    })
+                }
+            }
+        };
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+</script>
+<!-- end SnapEngage code -->
+
+    </body>
+</html>
+
