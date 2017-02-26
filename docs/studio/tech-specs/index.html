@@ -1,0 +1,1035 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Livestream Studio™ | Tech Specs</title>
+        <meta name="google-site-verification" content="yvnVRYqcoNrpjgPQFJxvIfIrGO3vyexEo9iXriUwcU4" />
+        <meta name="description" content="">
+        <script type="text/javascript">(function(){if(document.cookie.indexOf('LsTestCookie')===-1){document.cookie='LsTestCookie=true;path=/';if(document.cookie.indexOf('LsTestCookie')===-1){/*window.location.href='/cookies.html';*/}}})();</script>
+        <meta http-equiv="Content-Type" content="charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"167a2dcd46","applicationID":"442341","transactionName":"cFZcR0YOVVxdRx8RFUZdW1wbSVZEUFBCSw==","queueTime":0,"applicationTime":25,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="fb-app-id" content="142371818162" />
+<meta name="google-site-verification" content="yvnVRYqcoNrpjgPQFJxvIfIrGO3vyexEo9iXriUwcU4" />
+    <script src="https://cdn.optimizely.com/js/6330181092.js"></script>
+<!-- IE9 Task bar meta -->
+<meta name="application-name" content="Livestream" />
+<meta name="msapplication-tooltip" content="Watch, like and share live events on Livestream. Live stream video and connect your event to audiences on the web and mobile devices using Livestream's award winning platform and services." />
+<meta name="msapplication-starturl" content="http://livestream.com?ie9pinned=true" />
+<meta name="msapplication-navbutton-color" content="#c00" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/m/icon-iphone@2x.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/m/icon-ipad.png">
+<link rel="apple-touch-icon-precomposed" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/m/icon-iphone.png">
+<link rel="shortcut icon" type="image/x-icon" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/favicon.ico">
+<link rel="icon" type="image/ico" href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/favicon.ico">
+
+<script type="text/javascript">
+//<![CDATA[
+
+  var _sf_startpt=(new Date()).getTime()
+
+//]]>
+</script>
+
+        <meta content="142371818162" name="fb-app-id" />
+<meta property="fb:app_id" content="142371818162"/>
+<meta property="og:title" content="Livestream Studio™ | Tech Specs"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:site_name" content="Livestream"/>
+<meta property="og:url" content="https://livestream.com/studio/tech-specs"/>
+<meta property="og:image" content="https://cdn.livestream.com/deploy/website/production/a8fb976/assets/livestream-ogimage.jpg"/>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Livestream" />
+<meta name="twitter:title" content="Livestream Studio™ | Tech Specs" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://cdn.livestream.com/deploy/website/production/a8fb976/assets/livestream-ogimage.jpg" />
+
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+            <meta name="viewport" content="width=1024">
+        <script type="text/javascript">
+//<![CDATA[
+
+    // reading cookie without jquery
+    function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+    }
+    window.currentUser = (readCookie('__cu') !== null ? JSON.parse(decodeURIComponent(readCookie('__cu'))) : {});
+    window.lsconfig = {
+        assets : {
+            host : '//cdn.livestream.com/deploy/website/production/a8fb976',
+            prefix : '/assets',
+            path : function (asset) {
+                return this.host + this.prefix + (asset === null || asset === undefined ? '' : '/' + asset);
+            }
+        },
+    accountCreated : false,
+    supportUrl : 'https://help.livestream.com/hc/en-us/requests/new',
+    curatedEventstUrl : '/curated_events',
+    recurlySubDomain : 'livestream',
+    recurlyPublicKey: 'sjc-xHmhbxeRoJdKF9tPZK9tLQ',
+    apiUrl : 'https://api.new.livestream.com',
+    mixpanelToken : "61d57ff4b45a23016c9a98558467649b",
+    mixpanelDebug : false,
+    searchOptions : {"algolia_app_id":"7KJECL120U","algolia_search_key":"98f12273997c31eab6cfbfbe64f99d92","algolia_search_index_list":{"Events":"events","Accounts":"accounts","Videos":"videos"},"algolia_discovery_index_list":{"Events":"events","Accounts":"accounts","Videos":"videos","Categories":"categories"},"analytics_search_index_list":{"Accounts":"analytics-accounts","Events":"analytics-events","Videos":"analytics-videos","Images":"analytics-images","Statuses":"analytics-statuses"}},
+    notApplicable : 'NA',
+    client_ip : "183.20.135.132",
+    api : {
+        relativeUrlEndpoint : "/api",
+        absoluteUrlEndpoint : "//api.new.livestream.com",
+        host : "api.new.livestream.com",
+        playerHost : "player-api.new.livestream.com"
+    },
+    isLocked: false,
+    account: {
+    },
+    userData: '',
+    findFriends: '',
+    checkFacebookFriends: '/join?post_action%5Baction%5D=show_facebook_friends&amp;post_action%5Bredirect%5D=%2Fstudio%2Ftech-specs',
+    upgradePlan: '',
+    accountBillingPath: '/my_account/plans',
+    facebookPermissions : {
+        scope : 'email,user_birthday,publish_actions,manage_pages,user_friends'
+    },
+    fbGraphApi: 'graph.facebook.com/v2.3',
+    events : {
+    perRow : 10,
+    curatePerRow : 10,
+    socket: {
+    socketIOURL: "https://api.new.livestream.com/servers/sio/leastloaded",
+    }
+    },
+    account_id:"null",
+    };
+
+//]]>
+</script>
+        <link href="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio/tech_specs.css" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="P3Pv1" href="/w3c/p3p.xml">
+        <meta content="authenticity_token" name="csrf-param" />
+<meta content="lGsg4gnZ4/W2mxpN5SbZOaCKCuu5o2ugGFGwAgdO4Ao=" name="csrf-token" />
+    </head>
+    <body class="ls_marketing ls_left_nav capture_layout studio logged_out  tech_specs">
+        <script>
+    var user = (readCookie('__cu') !== null ? JSON.parse(decodeURIComponent(readCookie('__cu'))) : {});
+    var gtm_data = JSON.parse('{"page":"Marketing"}');
+    gtm_data.account_id = !user.id ? 'Unknown' : user.id.toString();
+    gtm_data.session_type = !user.id ? 'Logged Out' : 'Logged In';
+    gtm_data.plan_type = getPlan(user);
+    gtm_data.page = (typeof gtm_data.page === 'undefined' ? 'Others' : gtm_data.page);
+    dataLayer = [];
+    dataLayer.push(gtm_data);
+
+    function getPlan (user) {
+        var plan;
+        switch (true) {
+            case !user.id:
+                plan =  'Unknown';
+                break;
+            case user.is_free:
+                plan = 'Free';
+                break;
+            case user.is_basic:
+                plan = 'Basic';
+                break;
+            case user.is_premium:
+                plan = 'Premium';
+                break;
+            case user.is_enterprise === true:
+                plan = 'Enterprise';
+                break;
+            default:
+                plan = 'error'
+                break;
+        }
+      return plan;
+    }
+    // Reading the cookie separately for google analytics since at the time google analytics is called
+    // Application.currentUser might not be initalized.
+    function readCookie (name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') {
+                c = c.substring(1,c.length);
+            }
+            if (c.indexOf(nameEQ) == 0) {
+                return c.substring(nameEQ.length,c.length);
+            }
+        }
+        return null;
+    }
+</script>
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KNG43F"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer', 'GTM-KNG43F');
+</script>
+<!-- End Google Tag Manager -->
+
+        <div id="fb-root"></div>
+        <div id="container">
+            <div id="pagewrap" class="marketing_wrapper">
+                <header class="marketing_header " id="header">
+                  <div class="header_nav">
+    <div class="menu js-menu">
+        <span class="menu-item"></span>
+        <span class="menu-item"></span>
+        <span class="menu-item"></span>
+    </div>
+    <h1 class="logo js-logo">
+        <a class="header_logos large_black" href="/" title="Livestream"></a>
+        <a class="header_logos small_black" href="/" title="Livestream"></a>
+    </h1>
+    <nav class="maintabs js-maintabs">
+        <ul>
+            <li><a class="broadcast tab" href="/" title="Live Video Platform">Broadcast</a></li>
+            <li><a class="capture tab" href="/capture" title="Tools to Broadcast Live">Capture</a></li>
+            <li><a class="watch tab " href="/watch" title="Discover Live Events">Discover</a></li>
+        </ul>
+    </nav>
+    <div class="header_right contact js-header_contact">
+        <ul>
+                <li class="others_element phone">
+                    <a href="/contact" class="option" title="Contact Us">+1 646 490 1679</a>
+                </li>
+                <li class="others_element">
+                    <a href="https://livestream.com/blog" class="option" alt="Blog" title="Livestream | Product and Producers Blog">Blog</a>
+                </li>
+                <li class="others_element">
+                    <a href="https://help.livestream.com" class="help option" alt="Help" title="Livestream | Help">Help</a>
+                </li>
+                <li class="others_element seperator"> </li>
+
+                <a href="/session/new" class="login option js-user_login" title="Log in" data-remote="true" data-modal="true">Log in</a>
+                <a href="/platform/pricing" class="header_go_live option js-header_go_live" title="Livestream | Go Live">Go Live</a>
+        </ul>
+    </div>
+</div>
+
+                    <nav class="subnav_black studio_nav js-subnav">
+    <div class="product_navigation_container">
+        <nav role="navigation" class="products_dropdown js-products_dropdown">
+    <span class="menu_title js-products_dropdown_toggle">studio</span>
+    <ul class="menu_list">
+        <div class="menu_group">
+            <li class="list_item sub_list_title">PRODUCTS</li>
+            <li class="list_item">
+                <a href="/producer" title="Producer" class="list_link ">Producer</a>
+                <div class="product_tooltip producer_product_tooltip">
+                    <div class="product_name">Producer</div>
+                    <div class="product_text">Free broadcasting apps for every device. </div>
+                </div>
+            </li>
+            <li class="list_item">
+                <a href="/broadcaster" title="Broadcaster" class="list_link ">Broadcaster</a>
+                <div class="product_tooltip broadcasters_product_tooltip">
+                    <div class="product_name">Broadcaster</div>
+                    <div class="product_text">Go live from your camera. </div>
+                </div>
+            </li>
+            <li class="list_item">
+                <a href="/studio" title="Studio" class="list_link highlight">Studio</a>
+                <div class="product_tooltip studio_product_tooltip">
+                    <div class="product_name">Studio</div>
+                    <div class="product_text">Live production switcher software and hardware.</div>
+                </div>
+            </li>
+            <li class="list_item">
+                <a href="http://getmevo.com" title="Mevo" class="list_link">Mevo</a>
+                <div class="product_tooltip mevo_product_tooltip">
+                    <div class="product_name">Mevo</div>
+                    <div class="product_text">Edit video on the fly. Stream live or share later.</div>
+                </div>
+            </li>
+        </div>
+    </ul>
+</nav>
+
+        <ul class="product_navigation more_element_present studio_dropdown_spacing buy_now_spacing" data-menu="tech_specs">
+            <a class="" href="/studio/software" title="Software">Software</a>
+            <a class="" href="/studio/hd31" title="HD31">HD31</a>
+            <a class="" href="/studio/hd51" title="HD51">HD51</a>
+            <a class="" href="/studio/hd550" title="HD550">HD550</a>
+            <a class=""  href="/studio/hd1710" title="HD1710">HD1710</a>
+            <a class="" href="/studio/surface" title="Surface">Surface</a>
+            <a class="" href="/studio/surface-go" title="Surface Go">Surface Go</a>
+            <a class="" href="/studio/remote-cams" title="Remote Cams">Remote Cams</a>
+            <a class="highlight" href="/studio/tech-specs" title="Tech Specs">Tech Specs</a>
+            <a class="" href="https://help.livestream.com" title="Support">Support</a>
+        </ul>
+        <div class="more_item js-show_more">More
+            <ul class="js-more_dropdown more_dropdown menu_open"></ul>
+        </div>
+        <a href="http://store.livestream.com/products/" title="Buy Now" class="button_marketing red">Buy Now</a>
+    </div>
+</nav>
+
+                </header>
+                 <div id="wrapper">
+                    <div class="save-status">
+                        <p>&nbsp;</p>
+                    </div>
+                    <!-- header_menu file -->
+<section class="sidemenu_section js-sidemenu_section">
+	<div class="sidemenu_section_inner">
+		<div class="section">
+			<ul class="each_block larger_font">
+				<li class=""><a href="/">Broadcast</a></li>
+				<li class="active"><a href="/capture">Capture</a></li>
+			</ul>
+		</div>
+		<div class="section">
+			<div class="block_label">DISCOVER</div>
+			<ul class="each_block">
+  <li class="">
+    <a href="/watch">Home</a>
+  </li>
+  <li class="">
+    <a href="/watch/popular">Popular</a>
+  </li>
+  <li class=" hidden">
+    <a href="javascript:void(0);" class="has_location_icon js-location"></a>
+  </li>
+</ul>
+
+		</div>
+		<div class="section">
+			<ul class="each_block other_links">
+				<li><a href="/about">What is Livestream?</a></li>
+				<li><a href="https://help.livestream.com/">Help</a></li>
+				<li><a href="https://livestream.com/blog">Blog</a></li>
+				<li><a href="/terms">Privacy &amp; Terms</a></li>
+			</ul>
+		</div>
+		<div class="section js-discovery_account_container">
+		</div>
+	</div>
+</section>
+
+                    
+
+
+
+<div class="tech_specs_wrapper">
+    <h1 class="tech_specs_title">Livestream Studio Tech Specs</h1>
+    <div class="contact_us">
+    <div class="contact_info">
+        <h1>Interested in learning more?</h1>
+        <p>Talk to a Livestream specialist today and let us help you build your customized livestreaming solution.</p>
+        <ul class="phone_details">
+            <li class="us_number">1 877 977 8732</li>
+            <li class="international_number"><span class="icon">&#x1F30E;</span>&#43;1 646 490 1679</li>
+       </ul>
+		<div class="lead_form_button"><a href="#" alt="Talk to a Specialist" class="button_marketing large blue talk_to_sales js-request_demo" data-lead_source="Learn More" data-secondary_lead_source= "Studio - Tech Specs Page" data-class="demo" data-web_form_id="Learn More Studio - Tech Specs Page">Talk to a Specialist</a></div>
+		<p>Monday - Friday, 9am-6pm EST</p>
+    </div>
+</div>
+
+    <div class="fixed_wrapper js-tech_specs_fixed_wrapper">
+        <ul class="fixed_titles">
+            <li class="fixed_free_software">FREE SOFTWARE</li>
+            <li class="fixed_software">SOFTWARE</li>
+            <li class="fixed_hd31">HD31</li>
+            <li class="fixed_hd51">HD51</li>
+            <li class="fixed_hd51 four_k">HD51<span class="four_k_icon"></span></li>
+            <li class="fixed_hd550">HD550</li>
+            <li class="fixed_hd550 four_k">HD550<span class="four_k_icon"></span></li>
+            <li class="fixed_hd1710">HD1710</li>
+        </ul>
+    </div>
+    <div class="titles_wrapper">
+        <ul class="titles">
+            <li class="free_software">SOFTWARE</li>
+            <li class="software">SOFTWARE</li>
+            <li class="hd31">HD31</li>
+            <li class="hd51">HD51</li>
+            <li class="hd51 four_k">HD51<span class="four_k_icon"></span></li>
+            <li class="hd550">HD550</li>
+            <li class="hd550 four_k">HD550<span class="four_k_icon"></span></li>
+            <li class="hd1710">HD1710</li>
+        </ul>
+    </div>
+    <div class="specs_container">
+        <table class="specs_table" cellpadding="10">
+            <tr>
+                <td class="spec_title"><span class="spec_title_desc">Price (MSRP)</span></td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>Free</span></td>
+                <td class="spec"><span>$799</span></td>
+                <td class="spec"><span>$3,999</span></td>
+                <td class="spec"><span>$6,999</span></td>
+                <td class="spec"><span>$8,999</span></td>
+                <td class="spec"><span>$7,999</span></td>
+                <td class="spec"><span>$9,999</span></td>
+                <td class="spec last"><span>$29,999</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Shipping</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>Free <br />Download</span></td>
+                <td class="spec"><span>Ships Internationally</span></td>
+                <td class="spec"><span>US Only</span></td>
+                <td class="spec"><span>US Only</span></td>
+                <td class="spec"><span>US Only</span></td>
+                <td class="spec"><span>US Only</span></td>
+                <td class="spec"><span>US Only</span></td>
+                <td class="spec last"><span>US Only</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">HD-SDI Inputs</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>Up to 2</span></td>
+                <td class="spec"><span>Up to 25</span></td>
+                <td class="spec"><span>3</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec last"><span>17</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Embedded Audio Input</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>3 Stereo or 24<br />Mono Inputs</span></td>
+                <td class="spec"><span>5 Stereo or 40<br />Mono Inputs</span></td>
+                <td class="spec"><span>5 Stereo or 40<br />Mono Inputs</span></td>
+                <td class="spec"><span>5 Stereo or 40<br />Mono HD-SDI<br />embedded<br />audio inputs</span></td>
+                <td class="spec"><span>5 Stereo or 40<br />Mono HD-SDI<br />embedded<br />audio inputs</span></td>
+                <td class="spec last"><span>17 Stereo or 136<br />Mono Inputs</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Audio Monitoring (1/8”)</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">HDMI Inputs</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>3</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec"><span>5</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">HDMI Outputs</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Standard/High Definition SDI Output</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Composite Input (BNC)</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Composite Output (BNC)</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">S-VIDEO Input</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">S-VIDEO Output</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Component Input</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Component Output</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Analog Audio (1/8”) Input</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Analog Audio (1/8”) Output</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec"><span>1</span></td>
+                <td class="spec last"><span>1</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Analog Audio (1/4”) Input</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>4</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Analog Audio (1/4”) Output</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>2</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">AES/EBU Input</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>2</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">AES/EBU Output</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>2</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Additional AES/EBU OR Analog Audio Output</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec"><span>0</span></td>
+                <td class="spec last"><span>2</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Custom Carry Bag</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>Included</span></td>
+                <td class="spec"><span>Included</span></td>
+                <td class="spec last"><span>n/a</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Livestream Studio&trade; Keyboard</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>Sold Separately</span></td>
+                <td class="spec"><span>Sold Separately</td>
+                <td class="spec"><span>Included</span></td>
+                <td class="spec"><span>Included</span></td>
+                <td class="spec"><span>Included</span></td>
+                <td class="spec"><span>Included</span></td>
+                <td class="spec"><span>Included</span></td>
+                <td class="spec last"><span>Included</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Media Sources</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>4 integrated digital media sources for video playback. 1 DDR (video clip playback with built-in transcoder), 1GFX (graphics), 2 Color Bars / Background Color</span></td>
+                <td class="spec last" colspan="7"><span>7 integrated digital media sources for video &amp; graphics playback. 2 DDRs (video clip playback with built-in transcoder), 3 GFX (graphics), 2 Color Bars / Background Color</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Remote Camera</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>1 x Remote camera module for ingesting video/audio over local WiFi or Ethernet network, downlinking streams and Interviews via WebRTC.</span></td>
+                <td class="spec last" colspan="7"><span>10 x Remote camera module for ingesting video/audio over local WiFi or Ethernet network, downlinking streams, and Interviews via WebRTC.</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Format Converter</td>
+                <td class="spec_space"></td>
+                <td class="spec last" colspan="8"><span>Built-in broadcast quality format converter for every input with automatic format detection. Allows use of any camera and video source without matching video formats</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Built-In Multiview</td>
+                <td class="spec_space"></td>
+                <td class="spec last" colspan="8"><span>On-screen full field rate multiview of all live inputs, Preview, Program Out, GFX and DDR, Audio PPM overlay with peak hold feature on all inputs and outputs. Resizable layout allowing hiding of all controls to maximize multiview screens.</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">External Multiscreen</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>Up to 4x Extended Screen outputs depending on Video Card configuration &amp; type</td>
+                <td class="spec full_width" colspan="5"><span>1x Extended Screen output using HDMI</span></td>
+                <td class="spec last"><span>4x Extended Screen outputs using Mini DisplayPort</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Video Switcher/Mixer</td>
+                <td class="spec_space"></td>
+                <td class="spec last" colspan="8"><span>Mixer &amp; Effects Bank (M/E) with no upstream keyer. transitions : SMPTE Wipe, Cut &amp; Fade (Auto transition with adjustable duration in frames, manual via on-screen T-BAR or keyboard shortcuts)</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Graphics Downstream Key</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>1 x Graphics DSK (downstream key) channels. One channel for GFX1. Independent or locked transistion controls (face/cut/wipe). Preview on multiview.</span></td>
+                <td class="spec last" colspan="7"><span>3 x Graphics DSK (downstream key) channels. One channel for GFX1, one channel for GFX2 and onechannel for GFX 3. Independent or locked transition controls (fade/cut/wipe). Preview on multiview</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Graphics &amp; Titling</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>Load JPG or PNG files (full transparency support with PNG files). Add text (set position/font/ size/color) over any loaded image file within the GFX1.</span></td>
+                <td class="spec last" colspan="7"><span>Load JPG or PNG files (full transparency support with PNG files). Add text (set position/font/size/color) over any loaded image file within the GFX1, GFX2 or GFX3</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Video Clip Playback</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>1 Media Player - Eject/Load clip. Play Pause/stop. Audio/Video Scrubber. Timecode indicator. Seek to timecode. Mark In/Mark Out. Loop. Auto-play on transition</span></td>
+                <td class="spec last" colspan="7"><span>2 Media Players - Eject/Load clip. Play Pause/stop. Audio/Video Scrubber. Timecode indicator. Seek to timecode. Mark In/Mark Out. Loop. Auto-play on transition</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Recording</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec last" colspan="7"><span>Up to 4 simultaneous isolated source recordings. MJPEG with uncompressed audio. Interlacing and timecode support. Full compatibility with Blackmagic Design Media Express and Adobe Premiere.</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Recording Capacity</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>~40 hours at 1080i (Using 2 TB built in Hard Drive with recorder set to record at 100Mbps MJPEG AVI)</span></td>
+                <td class="spec"><span>~20 hours at 1080i (Using 1 TB built in Hard Drive with recorder set to record at 100Mbps MJPEG AVI)</span></td>
+                <td class="spec"><span>~40 hours at 1080i (Using 2 TB built in Hard Drive with recorder set to record at 100Mbps MJPEG AVI)</span></td>
+                <td class="spec"><span>~20 hours at 1080i (Using 1 TB built in Hard Drive with recorder set to record at 100Mbps MJPEG AVI)</span></td>
+                <td class="spec"><span>~40 hours at 1080i (Using 2 TB built in Hard Drive with recorder set to record at 100Mbps MJPEG AVI)</span></td>
+                <td class="spec last"><span>~60 hours at 1080i (Using 3 1 TB built in Hard Drive with recorder set to record at 100Mbps MJPEG AVI)</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Live Streaming</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>HD live streaming via Gigabit/100/10 built-in Ethernet. Presets in up to HD 720p. Multiple simultaneous bit-rates, including mobile quality for playback over 3G on mobile devices (iPhone/Android). Integrated live streaming to Livestream</span></td>
+                <td class="spec"><span>HD live streaming via Gigabit/100/10 built-in Ethernet. Presets in up to HD 720p. Multiple simultaneous bit-rates, including mobile quality for playback over 3G on mobile devices (iPhone/Android). Integrated live streaming to Livestream or any other RTMP compatible service including Ustream, YouTube Live, Akamai, Wowza Media Server, Twitch.</span></td>
+                <td class="spec"><span>High Quality Streaming. Integrated live streaming to Livestream or any other RTMP compatible service including Ustream, YouTube Live, Akamai, Wowza Media Server Twitch.</span></td>
+                <td class="spec last" colspan="5"><span>HD live streaming via Gigabit/100/10 built-in Ethernet. Presets in up to HD 720p. Multiple simultaneous bit-rates, including mobile quality for playback over 3G on mobile devices (iPhone/Android). Integrated live streaming to Livestream or any other RTMP compatible service including Ustream, YouTube Live, Akamai, Wowza Media Server, Twitch.</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Audio Mixing</td>
+                <td class="spec_space"></td>
+                <td class="spec last" colspan="8"><span>Integrated multi-channel audio mixer for internal and external audio sources, outputs, stream and headphones. Incorporated video switcher follow feature with audio crossfade support when fading two video sources.</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Supported Formats</td>
+                <td class="spec_space"></td>
+                <td class="spec left" colspan="2"><span class="two_col">4k<br /><br />HD: 720p50, 720p59.94, 720p60, 1080PsF23.98, 1080p23.98, 1080PsF24, 1080p24, 1080PsF25, 1080p25, 1080PsF29.97, 1080p29.97, 1080PsF30, 1080p30, 1080i50, 1080i59.94 and 1080i60<br /><br />SD: 625/25 PAL, 525/29.97 NTSC</span></td>
+                <td class="spec left last" colspan="6"><span class="four_col">4k<sup>*</sup><br /><br />HD: 720p50, 720p59.94, 720p60, 1080PsF23.98, 1080p23.98, 1080PsF24, 1080p24, 1080PsF25, 1080p25, 1080PsF29.97, 1080p29.97, 1080PsF30, 1080p30, 1080i50, 1080i59.94 and 1080i60<br><br>SD: 625/25 PAL, 525/29.97 NTSC</span><span class="note">*The pre-installed Blackmagic Design capture devices in the HD31/HD51/HD550/HD1710 do not support 4k</td>
+            </tr>
+            <tr>
+                <td class="spec_title">Playback Media Formats</td>
+                <td class="spec_space"></td>
+                <td class="spec last" colspan="8"><span>GFX: JPEG or PNG image files with transparency support. DDR: AVI MJPEG with uncompressed audio, DV Video, WMV (7/8/9), H.264 (.mov &amp; .avi), MPEG4 Part 2 (.mov &amp; .avi), MPEG4 V1/V2 (.mov &amp; .avi), AAC, MP3</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Record Media Formats</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec last full_width" colspan="7"><span>AVI MJPEG with uncompressed audio</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Operating System</td>
+                <td class="spec_space"></td>
+                <td class="spec last full_width" colspan="8"><span>Windows 7 Professional (64 bit) or better</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Built-in Display</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>None</span></td>
+                <td class="spec"><span>None</span></td>
+                <td class="spec"><span>None</span></td>
+                <td class="spec"><span>Integrated 17”  (1920x1200) HD LED LCD</span></td>
+                <td class="spec"><span>Integrated 17”  (1920x1200) HD LED LCD</span></td>
+                <td class="spec last"><span>None</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">CPU</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>Intel Core i7-4790K Haswell Quad-Core 4.0GHz</td>
+                <td class="spec"><span>Intel Core i7-5820K Processor (15M Cache, up to 3.60 GHz)</span></td>
+                <td class="spec"><span>Intel Core i7 6900K Broadwell-E 8-Core 3.2 GHz 20MB cache LGA 2011-v4 140W Desktop Processor</span></td>
+                <td class="spec"><span>Intel Core i7-5820K Processor (15M Cache, up to 3.60 GHz)</span></td>
+                <td class="spec"><span>Intel Core i7 6900K Broadwell-E 8-Core 3.2 GHz 20MB cache LGA 2011-v4 140W Desktop Processor</span></td>
+                <td class="spec last"><span>Intel "Sandy Bridge-E" Core i7 3930K 3.2 GHz Six-Core processor, 12MB L3 cache, 130W, Socket LGA 2011</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Graphics Card</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>On Board Graphics</span></td>
+                <td class="spec"><span>NVIDIA GeForce GT 610</span></td>
+                <td class="spec"><span>NVIDIA GeForce GT 730</span></td>
+                <td class="spec"><span>NVIDIA GeForce GT 610</span></td>
+                <td class="spec"><span>NVIDIA GeForce GT 730</span></td>
+                <td class="spec last"><span>ATI Firepro&trade; 2460 Multi-View Professional Graphics PCI Express 2.0 Graphics card quad output</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Storage</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>2TB WD BLACK SERIES WD2003FZEX 7200 RPM/ SATA 2.5" Internal<br />Hard Drive</span></td>
+                <td class="spec"><span>1 TB/ Western Digital Red 7200 RPM/ SATA 2.5" Internal Hard Drive</span></td>
+                <td class="spec"><span>Samsung 850 EVO 2TB SSD</span></td>
+                <td class="spec"><span>1 TB/ Western Digital Red 7200 RPM/ SATA 2.5" Internal Hard Drive</span></td>
+                <td class="spec"><span>Samsung 850 EVO 2TB SSD</span></td>
+                <td class="spec last"><span>Dual quick-time front removable (2) x WD Red 1TB/7200 RM ISO recording drives, mid-plane, access door, receiver mounting kits. 1 internal fix mounted WD Red 1TB/7200 RM ISO hard drive &amp; 1 internal fix mounted 120GB SSD OS / application drive.</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">RAM</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>G.SKILL Trident X Series 16GB (2 x 8GB) 240-Pin DDR3 SDRAM</span></td>
+                <td class="spec"><span> 8GB 4 total DDR3 1600 MHz RAM (non-ECC) (2GB x 4 DIMM triple-channel configuration)</span></td>
+                <td class="spec"><span> 64GB DDR4 2133 MHz RAM</span></td>
+                <td class="spec"><span> 16GB 4 total DDR3 1600 MHz RAM (non-ECC) (4GB x 4 DIMM triple-channel configuration)</span></td>
+                <td class="spec"><span> 64GB DDR4 2133 MHz RAM</span></td>
+                <td class="spec last"><span>64 GB 8 total DDR3 1600Mhz Non-ECC (16GB X 4 Dimm configuration)</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Processing</td>
+                <td class="spec_space"></td>
+                <td class="spec last" colspan="8"><span>Video: 4:2:2, 10 bit Color (REC 601, REC 709) Audio: 48 kHz, 24-bitrEF IN/Genlock (Requires genlocking the two Blackmagic Design cards via two separate connectors)</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Built-in Video Input/Output Cards </td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</td>
+                <td class="spec"><span>3 Blackmagic Design DeckLink Mini Recorder (PCI), 1 Blackmagic Design DeckLink Mini Monitor (PCI)</span></td>
+                <td class="spec full_width" colspan="4"><span>5 Blackmagic Design DeckLink Mini Recorder (PCI), 1 Blackmagic Design DeckLink Mini Monitor (PCI)</span></td>
+                <td class="spec last"><span>4 Blackmagic Design DeckLink Quad (PCI) Blackmagic<br />Design DeckLink Studio (PCI)</span></td>
+            </tr>
+            <tr>
+                <td class="spec_title">Included in the Box</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>Software Dongle</td>
+                <td class="spec full_width" colspan="3"><span>Power cable, Livestream Studio™ Keyboard, Mouse, Livestream Mousepad, Rack Ears Rubber Feet, Blackmagic Design cards documentation and driver CD, Warranty</span></td>
+                <td class="spec full_width" colspan="2"><span>Carry-on bag, Power cable, Livestream Studio™ Keyboard, Mouse, Livestream Mousepad, Rubber Feet Blackmagic Design cards documentation and driver CD Warranty</span></td>
+                <td class="spec last"><span>Power cable 16 BNC Female to DIN 1.0/2.3 RG-59 SDI Cable (for SDI inputs on Blackmagic Design Quad card) Livestream Studio™ Keyboard Mouse  Livestream Mousepad Rack-mount slide rail kit Rubber Feet Blackmagic DeckLink Studio Breakout Cable Blackmagic Design cards documentation and driver CD. Warranty.</span></td>
+            </tr>
+            <tr class="last_spec">
+                <td class="spec_title">Physical Dimensions</td>
+                <td class="spec_space"></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>n/a</span></td>
+                <td class="spec"><span>13.7" (D) x <br>19" (W) x<br> 3.5" (H)  <br>~13.8 lbs</span></td>
+                <td class="spec full_width" colspan="2"><span>14" (D) x <br>17" (W) x <br>3.5" (H) <br>~13.8 lbs</span></td>
+                <td class="spec full_width" colspan="2"><span>3.03" - <br>4.19" (D) x<br>17.33 (W) x<br>14.8 (H) <br>~19lbs</span></td>
+                <td class="spec last"><span>20.83" (D) x<br>16.50" (W) x<br>5.25" (H) <br>~20.4 lbs</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<img src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/button/loading-black-small@2x.png" style="display:none"/>
+<div class="overlay_bg js-overlay_bg">
+    <div class="overlay_container js-demo_overlay">
+        <div class="form_loading"></div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+            <div class="footer_wrapper">
+    <footer id="footer" class="footer">
+            <section class="watch_livestream_anywhere">
+                <h2>Watch Livestream Anywhere</h2>
+                <div class="livestream_store">
+                    <div class="app_store"><a href="https://itunes.apple.com/us/app/id493086499?mt=8" alt="App Store" target="_blank" title="App Store">App Store</a><caption>iPhone / iPad / Apple TV</caption></div>
+                    <div class="google_play_store"><a href="https://play.google.com/store/apps/details?id=com.livestream.livestream&amp;amp;referrer=utm_source%3Dwebsite-mobile-page%26utm_medium%3Dbutton" alt="Google Play Store" title="Google Play Store" target="_blank">Google Play Store</a><caption>Android Phone / Tablet</caption></div>
+                    <div class="roku_store"><a href="https://channelstore.roku.com/details/29216/livestream" alt="Roku Store" target="_blank" title="Roku Store">Roku Store</a><caption>Roku TV Set-top Box</caption></div>
+                </div>
+            </section>
+        <section class="footer_info_wrapper">
+            <ul class="footer_info">
+                <li class="footer_info_column about">
+                    <h3>About</h3>
+                    <ul class="footer_list">
+                        <li><a href="/about" alt="What is Livestream?" title="Livestream | What is Livestream?">What is Livestream?</a></li>
+                        <li><a href="/team" alt="Meet Our Team" title="Livestream | Meet Our Team">Meet Our Team</a></li>
+                        <li><a href="/careers" alt="Careers" title="Livestream | Careers at Livestream">Careers</a></li>
+                        <li><a href="/press" alt="Press" title="Livestream | Press Releases and News">Press</a></li>
+                        <li><a href="https://livestream.com/blog" alt="Blog" title="Livestream | Product and Producers Blog">Blog</a></li>
+                        <li><a href="/contact" alt="Contact" title="Livestream | Contact Us">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column products">
+                    <h3>Products</h3>
+                    <ul class="footer_list">
+                        <li><a href="/" alt="Platform" title="Livestream | Award Winning Live Streaming Platform">Platform</a></li>
+                        <li><a href="/producer" alt="Producer" title="Livestream Producer | Free Broadcasting Apps for Every Device">Producer</a></li>
+                        <li><a href="/broadcaster" alt="Broadcaster" title="Livestream Broadcaster | Stream HD Live Video without a Computer">Broadcaster</a></li>
+                        <li><a href="/studio" alt="Studio" title="Livestream Studio&trade; | Live Production Hardware and Software">Studio</a></li>
+                        <li><a href="/developers" alt="Developer Tools" title="Developer Tools">Developer Tools</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column services">
+                    <h3>Services</h3>
+                    <ul class="footer_list">
+                        <li><a href="/production" alt="Production" title="Livestream | Production Services">Production</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column resellers">
+                    <h3>Resellers</h3>
+                    <ul class="footer_list">
+                        <li><a href="http://store.livestream.com/products/#resellers" alt="Find a Reseller" title="Livestream | Resellers of Livestream Products" target="_blank">Find a Reseller</a></li>
+                        <li><a href="https://docs.google.com/a/livestream.com/forms/d/1nvv4JD85SS5Hs3It_2Iw7-vPVmpEYg8auXRFzzHAOuU/viewform" alt="Become a Reseller" title="Livestream | Become a Livestream Reseller" target="_blank">Become a Reseller</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column venues">
+                    <h3>Venue</h3>
+                    <ul class="footer_list">
+                        <li><a href="http://www.livestreampublic.com/" title="Livestream Public">Livestream Public</a></li>
+                    </ul>
+                </li>
+                <li class="footer_info_column sales_support">
+                    <h3>Sales &amp; Support </h3>
+                    <ul class="footer_list">
+                        <li><a href="https://help.livestream.com" title="Livestream | Help" class="js-get_help" alt="Help">Get Help – 7 days a week</a></li>
+                        <li><a href="/contact" title="Livestream | Contact Us" alt="Contact Us">Contact Us</a></li>
+                        <li><span class="gray">United States :</span> <a href="tel:8779778732">877 977 8732</a></li>
+                        <li><span class="gray">International :</span> <a href="tel:+16464901679">+1 646 490 1679</a></li>
+                        <li>
+                            <div class="fb-like facebook_like" data-href="http://facebook.com/livestream" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
+                            <div class="twitter_wrapper">
+                                <a href="https://twitter.com/livestream" class="twitter-follow-button" data-show-count="true" data-show-screen-name="true">Follow @livestream</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="footer_links_wrapper">
+            <div class="footer_links">
+                <ul>
+                    <li>&copy; Livestream</li>
+                    <li><a class="js-footer_terms" href="/terms" alt="Terms &amp; Privacy" title="Livestream | Terms of Use and Privacy Policy">Terms &amp; Privacy</a></li>
+                    <li><a href="http://status.livestream.com" alt="Service Status" title="Livestream | Service Status" class="service_status">Service Status</a></li>
+                </ul>
+            </div>
+            <div class="made_in_ny_logo">Made in NY</div>
+            <div class="original_livestream"><a href="https://secure.livestream.com/myaccount/channels" alt="Looking for Original Livestream?" title="Have an Original Livestream Account? Login Here">Looking for Original Livestream?</a></div>
+        </section>
+    </footer>
+</div>
+    <div class="mobile_footer_wrapper">
+        <ul class="footer_left_part">
+            <li class="mobile_footer_contact"><a href="/contact" title="Livestream | Contact Us" alt="Contact Us">Contact Us</a></li>
+            <li class="mobile_footer_help"><a href="https://help.livestream.com" title="Livestream | Help" alt="Help">Help</a></li>
+        </ul>
+        <ul class="footer_right_part">
+            <li>&copy; Livestream</li>
+        </ul>
+    </div>
+
+        </div>
+            <script type="text/javascript">
+//<![CDATA[
+
+        if (top !== self) {
+            if (!window.document.referrer.match(/^(http)?s?:?(.*)?optimizely\.com/)) {
+                alert('The URL ' + self.location.href + ' cannot be viewed inside a frame, you will be redirected.');
+                top.location.replace(self.location.href);
+            }
+        }
+
+//]]>
+</script>
+        <script src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/mixpanel.js" type="text/javascript"></script>
+                <script>var require = {"baseUrl":"","waitSeconds":0};</script>
+      <script data-main="//cdn.livestream.com/deploy/website/production/a8fb976/assets/studio_tech_specs" src="//cdn.livestream.com/deploy/website/production/a8fb976/assets/require.js"></script>
+
+        <!-- Begin Munchkin Tracking Code -->
+<script type="text/javascript">
+    if (!window.jQuery) {
+        (function() {
+            var didInit = false;
+            function initMunchkin() {
+                if(didInit === false) {
+                    didInit = true;
+                    Munchkin.init('582-GOU-684', { "cookieAnon": true });
+                }
+            }
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//munchkin.marketo.net/munchkin.js';
+            s.onreadystatechange = function() {
+                if (this.readyState == 'complete' || this.readyState == 'loaded') { initMunchkin(); }
+            };
+            s.onload = initMunchkin;
+            document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+    } else {
+        $.ajax({
+            url: '//munchkin.marketo.net/munchkin.js',
+            dataType: 'script',
+            cache: true,
+            success: function() {
+                Munchkin.init('582-GOU-684', { "cookieAnon": true });
+            }
+        });
+    };
+</script>
+<!-- End Munchkin Tracking Code -->
+
+
+        <!-- begin SnapEngage code -->
+<script type="text/javascript">
+    (function() {
+        var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+        se.src = '//storage.googleapis.com/code.snapengage.com/js/cefd7880-0d96-4c29-adb1-416279ac279f.js';
+        var done = false;
+        se.onload = se.onreadystatechange = function() {
+        if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete'))
+            { done = true; /* Place your SnapEngage JS API code below */ /* SnapEngage.allowChatSound(true); Example JS API: Enable sounds for Visitors. */
+                SnapEngage.hideButton();
+                SnapEngage.setCallback('Close', function (type, status){
+                    SnapEngage.hideButton();
+                });
+
+                if (window.location.pathname === '/platform/pricing'){
+                    SnapEngage.showButton();
+                    SnapEngage.setCallback('Close', function (type, status){
+                        SnapEngage.showButton();
+                    })
+                }
+            }
+        };
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+</script>
+<!-- end SnapEngage code -->
+
+    </body>
+</html>
